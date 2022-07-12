@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'orta': '800px',
+                    // => @media (min-width: 640px) { ... }
+
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="h-[100vh]">
+
+    <div class="w-full h-[50px] bg-red-300 flex justify-between">
+        <img src="./swoosh-logo-black.jpeg" class="w-[50px] ml-[20px]" alt="">
+
+        <ul class="items-center flex-[.5] border justify-around hidden md:flex">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Men</a></li>
+        </ul>
+
+        <div class="w-[160px] flex justify-around text-xl  items-center text-white">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars block md:hidden"></i>
+        </div>
+    </div>
+    <img src="./swoosh-logo-black.jpeg" class="border border-black border-[3px] w-1/2 md:w-1/2 orta:w-3/4 " alt="">
+</body>
+
+</html>
